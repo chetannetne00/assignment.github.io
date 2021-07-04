@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Assignment</title>
+    <script
+      src="https://kit.fontawesome.com/84607d5c49.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: "Open Sans", Arial, sans-serif;
+        line-height: 1.5;
+        color: hsl(0, 0%, 20%);
+        font-size: 20px;
+        background-color: rgb(237, 238, 238);
+        margin: 0px;
+      }
+
+      h1,
+      h2 {
+        color: #000000;
+      }
+
+      .nav_bar {
+        background-color: gray;
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+      }
+
+      .nav_item {
+        width: 50px;
+
+        background-color: rgb(40, 71, 40);
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        margin: auto 50px auto 0px;
+      }
+
+      .nav_item a {
+        text-decoration: none;
+        color: white;
+      }
+
+      #navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 80px;
+        height: 100vh;
+        border-width: 0px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 20px #000;
+      }
+
+      #navbar header {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+
+      #nav-list {
+        list-style: none;
+        padding-left: 0px;
+        overflow-y: auto;
+        border: 2px solid rgb(85, 85, 85);
+      }
+
+      #nav-list li {
+        border-width: 1px;
+        border-color: rgb(85, 85, 85);
+        text-align: center;
+        padding: 5px;
+        font-weight: normal;
+        font-size: 10px;
+        width: auto;
+        height: auto;
+      }
+
+      #nav-list li:hover {
+        background-color: rgb(171, 205, 209);
+        transition: 1000ms;
+      }
+
+      .nav-link {
+        text-decoration: inherit;
+        color: inherit;
+      }
+
+      main {
+        margin-left: 15vw;
+        margin-right: 2vw;
+      }
+
+      main ol {
+        list-style: disc;
+      }
+
+      main li {
+        margin-top: 5px;
+      }
+
+      .main-section {
+        text-align: justify;
+        padding-top: 50px;
+        min-height: 100vh;
+      }
+
+      code {
+        background-color: rgb(230, 255, 225);
+        display: block;
+        line-height: 2;
+        white-space: pre;
+        word-wrap: normal;
+        border-radius: 5px;
+        padding: 5px;
+        padding-left: 10px;
+      }
+
+      .view-div {
+        background-color: gray;
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: fixed;
+        left: 0px;
+        bottom: 0px;
+      }
+
+      .view {
+        width: 50px;
+        margin-right: 10px;
+        background-color: rgb(40, 71, 40);
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        margin: 10px;
+      }
+
+      input {
+        width: 80%;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        font-size: 20px;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 10%;
+      }
+
+      .or {
+        margin-left: 50%;
+      }
+      #box {
+        height: 150px;
+        width: 150px;
+        background: white;
+        text-align: center;
+        margin-left: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <!-- <img src="circle.png" alt="circle" height="100px" width="120px" /> -->
+        <img src="circle.png" alt="circle" height="40px" width="40px" />
+      </header>
+
+      <ol id="nav-list">
+        <a href="#student" class="nav-link"
+          ><li>
+            <img
+              src="person.png"
+              alt="circle"
+              height="40px"
+              width="40px"
+            />Student
+          </li>
+        </a>
+
+        <a href="#lessonplan" class="nav-link"
+          ><li>
+            <img src="Book.png" alt="circle" height="40px" width="40px" />Lesson
+            Plan
+          </li>
+        </a>
+        <a href="#setting" class="nav-link"
+          ><li>
+            <img
+              src="Setting.png"
+              alt="circle"
+              height="40px"
+              width="40px"
+            />Setting
+          </li>
+        </a>
+      </ol>
+    </nav>
+
+    <main id="main-doc">
+      <section id="student" class="main-section">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <article>
+          <p>
+            <i class="fas fa-caret-left"></i> &nbsp This is the setion about
+            details of the student
+          </p>
+          <p>
+            <i class="fas fa-caret-left"></i> &nbsp Student can buy new coarses
+            here
+          </p>
+        </article>
+      </section>
+
+      <section id="lessonplan" class="main-section">
+        <div>
+          <header>
+            <h2>Roapmap to crack JEE</h2>
+          </header>
+        </div>
+        <p><i class="fas fa-caret-left"></i> &nbsp Videos</p>
+        <input type="text" placeholder="insert URL here" width="100%" />
+        <p class="or">or</p>
+        <div id="box">Upload</div>
+      </section>
+
+      <section id="setting" class="main-section">
+        <header>
+          <h2>Config Setting</h2>
+        </header>
+        <article>
+          <p>
+            <i class="fas fa-caret-left"></i> &nbsp Here student can edit their
+            profile
+          </p>
+          <p><i class="fas fa-caret-left"></i> &nbsp General Setting</p>
+          <p><i class="fas fa-caret-left"></i> &nbsp Privacy Setting</p>
+          <p><i class="fas fa-caret-left"></i> &nbsp Help</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
